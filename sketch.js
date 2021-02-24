@@ -16,7 +16,7 @@ function preload(){
     thun2 = loadImage("2.png");
     thun3 = loadImage("3.png");
     thun4 = loadImage("4.png");
-    rains = loadSound("Thunder-wind-and-rain-sound-effect.mp3");
+    rains = loadSound();
 }
 
 function setup(){
@@ -43,7 +43,7 @@ function draw(){
     background("black");
     Engine.update(engine);
 
-    rains.play();
+    //rains.play();
 
     rand = Math.round(random(1,4));
     if(frameCount % 80 === 0){
